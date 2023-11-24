@@ -1,0 +1,75 @@
+.flex-generic {
+  display: flex;
+  gap: 10px;
+}
+
+.projeto {
+  border: 1px solid 0;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.projeto img {
+  width: 100%;
+}
+.projeto button {
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+.imgName {
+  width: 30% !important;
+}
+
+.infos {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.infos article {
+  margin: 7px;
+  padding: 15px;
+  width: 100%;
+}
+.infos article h1 {
+  font-size: 25px;
+}
+
+.row {
+  display: flex;
+}
+.row h1 {
+  margin: 10px;
+  width: 20%;
+  font-size: 25px;
+}
+.row p {
+  margin: 10px;
+  width: 80%;
+}
+
+.imgSm {
+  width: 50%;
+}
+
+.card {
+  margin-left: 0;
+  padding: 15px;
+}
+
+@media screen and (max-width: 975px) {
+  .flex-generic {
+    flex-wrap: wrap;
+  }
+  .projeto {
+    width: 100%;
+  }
+  .infos {
+    width: 100%;
+  }
+  .row {
+    align-items: center;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Home.style.css.map */

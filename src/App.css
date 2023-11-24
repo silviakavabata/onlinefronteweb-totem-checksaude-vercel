@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'montSerrat';
+  src: url('/src/assets/font/Montserrat-Regular.otf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montSerrat';
+}
+
+.bg-azul{
+    background-color: #73A6FB;
+}
+.bg-vermelho{
+  background-color: #DD4E4E;
+}
+.bg-branco{
+  background-color: white;
+}
+.bg-cinza{
+  background-color: #acacac;
+}
+
+.texto-vermelho {
+  color: #DD4E4E; 
+}
+.texto-azul {
+  color: #73A6FB; 
+}
+.texto-branco {
+  color: white; 
+}
+.texto-preto {
+  color: #4D4D4D; 
+}
+
+.botao-vermelho {
+	background-color:#DD4E4E;
+	border-radius:10px;
+  border-color: #DD4E4E;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+  font-weight: bold;
+	font-family:'montSerrat';
+	font-size:19px;
+  text-transform: uppercase;
+	padding:15px 40px;
+	text-decoration:none;
+}
+
+.botao-vermelho:active {
+	position:relative;
+	top:1px;
+}
