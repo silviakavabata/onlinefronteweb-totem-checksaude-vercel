@@ -19,7 +19,7 @@ function Login() {
     e.preventDefault();
   
     try {
-      const response = await fetch("https://check-saude-json-server.vercel.app/user");
+      const response = await fetch("https://onlinefronteweb-totem-checksaude.vercel.app/user");
       if (response.ok) {
         const users = await response.json();
         console.log(users);

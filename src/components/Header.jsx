@@ -22,7 +22,7 @@ function Header() {
   const logout =()=>{
     sessionStorage.removeItem("usuarioLogado");
     console.log("saindo")
-    window.location="/"
+    window.location="/login"
   }
 
   return (
@@ -35,17 +35,12 @@ function Header() {
         
         {usuarioLogado ? (
           <div style={{ display: 'flex' , alignItems:'center' }}>
-            <p className='texto-laranjaEscuro'>Bem vindo {usuarioLogado.nome}</p>
-            <div className="sec-center">
-              <input className="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-              <label className="for-dropdown" htmlFor="dropdown">
-                <img src={`/assets/${userIcon}`} className="icon" alt="" />
-                <i className="uil uil-arrow-down"></i>
-              </label>
-              <div className="section-dropdown">
-                <a href="#"><Link to="/perfil">Perfil</Link> </a>
+            <div>
+            <p>Bem vindo {usuarioLogado.nome}</p>
+            <p>{usuarioLogado.email}</p>
+            </div>
+            <div>
                 <a href='#' onClick={logout}>Log Out</a>
-              </div>
             </div>
           </div>
         ) : (
